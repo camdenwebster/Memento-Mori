@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		19C263B82D07E47300A3E992 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C263B72D07E47300A3E992 /* WidgetKit.framework */; };
+		19C263BA2D07E47300A3E992 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C263B92D07E47300A3E992 /* SwiftUI.framework */; };
+		19C263CB2D07E47500A3E992 /* MementoMoriWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 19C263B52D07E47300A3E992 /* MementoMoriWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		19C2638D2D07221100A3E992 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,48 @@
 			remoteGlobalIDString = 19C263792D07220F00A3E992;
 			remoteInfo = "Memento Mori";
 		};
+		19C263C92D07E47500A3E992 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C263722D07220F00A3E992 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C263B42D07E47300A3E992;
+			remoteInfo = MementoMoriWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19C263D02D07E47500A3E992 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				19C263CB2D07E47500A3E992 /* MementoMoriWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19C2637A2D07220F00A3E992 /* Memento Mori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memento Mori.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C2638C2D07221100A3E992 /* Memento MoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memento MoriTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C263962D07221100A3E992 /* Memento MoriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memento MoriUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C263B52D07E47300A3E992 /* MementoMoriWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MementoMoriWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C263B72D07E47300A3E992 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		19C263B92D07E47300A3E992 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		19C263D22D07E8EB00A3E992 /* MementoMoriWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MementoMoriWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		19C263CC2D07E47500A3E992 /* Exceptions for "MementoMoriWidget" folder in "MementoMoriWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 19C263B42D07E47300A3E992 /* MementoMoriWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		19C2637C2D07220F00A3E992 /* Memento Mori */ = {
@@ -43,6 +84,14 @@
 		19C263992D07221100A3E992 /* Memento MoriUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Memento MoriUITests";
+			sourceTree = "<group>";
+		};
+		19C263BB2D07E47300A3E992 /* MementoMoriWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				19C263CC2D07E47500A3E992 /* Exceptions for "MementoMoriWidget" folder in "MementoMoriWidgetExtension" target */,
+			);
+			path = MementoMoriWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +118,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19C263B22D07E47300A3E992 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C263BA2D07E47300A3E992 /* SwiftUI.framework in Frameworks */,
+				19C263B82D07E47300A3E992 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		19C263712D07220F00A3E992 = {
 			isa = PBXGroup;
 			children = (
+				19C263D22D07E8EB00A3E992 /* MementoMoriWidgetExtension.entitlements */,
 				19C2637C2D07220F00A3E992 /* Memento Mori */,
 				19C2638F2D07221100A3E992 /* Memento MoriTests */,
 				19C263992D07221100A3E992 /* Memento MoriUITests */,
+				19C263BB2D07E47300A3E992 /* MementoMoriWidget */,
+				19C263B62D07E47300A3E992 /* Frameworks */,
 				19C2637B2D07220F00A3E992 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +149,18 @@
 				19C2637A2D07220F00A3E992 /* Memento Mori.app */,
 				19C2638C2D07221100A3E992 /* Memento MoriTests.xctest */,
 				19C263962D07221100A3E992 /* Memento MoriUITests.xctest */,
+				19C263B52D07E47300A3E992 /* MementoMoriWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		19C263B62D07E47300A3E992 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19C263B72D07E47300A3E992 /* WidgetKit.framework */,
+				19C263B92D07E47300A3E992 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +173,12 @@
 				19C263762D07220F00A3E992 /* Sources */,
 				19C263772D07220F00A3E992 /* Frameworks */,
 				19C263782D07220F00A3E992 /* Resources */,
+				19C263D02D07E47500A3E992 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19C263CA2D07E47500A3E992 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				19C2637C2D07220F00A3E992 /* Memento Mori */,
@@ -163,6 +236,28 @@
 			productReference = 19C263962D07221100A3E992 /* Memento MoriUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		19C263B42D07E47300A3E992 /* MementoMoriWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C263CD2D07E47500A3E992 /* Build configuration list for PBXNativeTarget "MementoMoriWidgetExtension" */;
+			buildPhases = (
+				19C263B12D07E47300A3E992 /* Sources */,
+				19C263B22D07E47300A3E992 /* Frameworks */,
+				19C263B32D07E47300A3E992 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				19C263BB2D07E47300A3E992 /* MementoMoriWidget */,
+			);
+			name = MementoMoriWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MementoMoriWidgetExtension;
+			productReference = 19C263B52D07E47300A3E992 /* MementoMoriWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +279,9 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 19C263792D07220F00A3E992;
 					};
+					19C263B42D07E47300A3E992 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 				};
 			};
 			buildConfigurationList = 19C263752D07220F00A3E992 /* Build configuration list for PBXProject "Memento Mori" */;
@@ -203,6 +301,7 @@
 				19C263792D07220F00A3E992 /* Memento Mori */,
 				19C2638B2D07221100A3E992 /* Memento MoriTests */,
 				19C263952D07221100A3E992 /* Memento MoriUITests */,
+				19C263B42D07E47300A3E992 /* MementoMoriWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +322,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		19C263942D07221100A3E992 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C263B32D07E47300A3E992 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +359,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19C263B12D07E47300A3E992 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +378,11 @@
 			isa = PBXTargetDependency;
 			target = 19C263792D07220F00A3E992 /* Memento Mori */;
 			targetProxy = 19C263972D07221100A3E992 /* PBXContainerItemProxy */;
+		};
+		19C263CA2D07E47500A3E992 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19C263B42D07E47300A3E992 /* MementoMoriWidgetExtension */;
+			targetProxy = 19C263C92D07E47500A3E992 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Memento Mori/Memento Mori.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Memento Mori/Preview Content\"";
@@ -422,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Memento Mori/Memento Mori.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Memento Mori/Preview Content\"";
@@ -518,6 +638,62 @@
 			};
 			name = Release;
 		};
+		19C263CE2D07E47500A3E992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MementoMoriWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7HLP74XY3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MementoMoriWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MementoMoriWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csideproductions.Memento-Mori.MementoMoriWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19C263CF2D07E47500A3E992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MementoMoriWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7HLP74XY3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MementoMoriWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MementoMoriWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csideproductions.Memento-Mori.MementoMoriWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +729,15 @@
 			buildConfigurations = (
 				19C263A72D07221100A3E992 /* Debug */,
 				19C263A82D07221100A3E992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C263CD2D07E47500A3E992 /* Build configuration list for PBXNativeTarget "MementoMoriWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C263CE2D07E47500A3E992 /* Debug */,
+				19C263CF2D07E47500A3E992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
